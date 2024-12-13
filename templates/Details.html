@@ -1,0 +1,26 @@
+{%extends "Homepage.html"%}
+
+{%block wikipedia%}
+    <li><a href="https://it.wikipedia.org/wiki/Pagina_principale">Wikipedia</a></li>
+{%endblock%}
+
+{%block Container%}
+    <table>
+        <tr>
+            <th>Nome Prodotto</th>
+            <th>Scaffale</th>
+            <th>Prezzo</th>
+        </tr>
+
+        {%for item1 in lista%}
+        <tr>
+            {%for item2 in item1%}
+                <td>
+                    {{item2}}
+                </td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+    {%endblock%}
+
