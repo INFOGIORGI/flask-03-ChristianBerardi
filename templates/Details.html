@@ -14,11 +14,10 @@
 
         {%for item1 in lista%}
         <tr>
-            {%for item2 in item1%}
-                <td>
-                    {{item2}}
-                </td>
-            {%endfor%}
+            <td>{{item1[0]}}</td>
+            <td><a href="{{url_for('scaffale', nScaff=item1[1])}}">{{item1[1]}}</a></td>
+            <td>{{item1[2]}}</td>
+    
         </tr>
         {%endfor%}
     </table>

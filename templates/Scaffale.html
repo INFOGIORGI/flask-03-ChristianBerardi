@@ -1,0 +1,18 @@
+{%extends "Homepage.html"%}
+
+{%block Container%}
+<table>
+    <tr>
+        <th>Nome Prodotto</th>
+        <th>Prezzo</th>
+    </tr>
+
+    {%for i in lista2%}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+
+    {%endfor%}
+</table>
+{%endblock%}
